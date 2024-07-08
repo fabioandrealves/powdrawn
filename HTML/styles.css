@@ -1,0 +1,458 @@
+#menu {
+  display: none;
+}
+
+body {
+  background-color: #f2b705;
+  overflow-x: hidden; /*tira o scroll da barra horizontal*/
+}
+
+header .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #260101;
+  top: 130px;
+  flex: 1 1 0;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+header .p1 {
+  width: 300px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+}
+header .main .main_texto h1 {
+  font-size: 40px;
+  color: #f2b705;
+  white-space: normal;
+}
+
+header .main .main_texto h1 span {
+  margin-left: 15px;
+  font-family: "MV Boli", sans-serif;
+  line-height: 22px;
+  font-size: 40px;
+}
+
+header .main .main_imagem img {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+header .main .explore {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 0px;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  border: 2px solid #333333;
+  transition: 0.3s;
+  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+  background-color: #f2b705;
+  cursor: pointer;
+  margin: 0; /* Reduzido para uma única linha */
+  padding: 8px 40px; /* Reduzido para uma única linha */
+  white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+  display: inline-block; /* Garante que o botão se comporte corretamente dentro de um contêiner flex ou inline */
+  text-align: center; /* Centraliza o texto dentro do botão */
+  margin-bottom: -40px;
+}
+
+header .main .explore:hover {
+  box-shadow: 0 0 #333;
+  color: #fff;
+  background-color: #333;
+}
+
+h1 {
+  color: grey;
+  font-size: 24px;
+}
+
+section {
+  background-image: url("backgroundburguer.jpg");
+  background-repeat: repeat-x;
+}
+
+.testimonials-container {
+  text-align: center;
+  background-color: #260101;
+  color: #ffffff;
+  padding: 50px 20px;
+}
+
+.subheading {
+  font-size: 35px;
+  color: #f2b705;
+}
+
+.heading-secondary {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.testimonials-container {
+  text-align: center;
+  background-color: #260101;
+  color: #ffffff;
+  padding: 20px 20px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.testimonial {
+  max-width: 600px;
+  background-color: #5c1010;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.testimonial-img {
+  width: 125px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 18px;
+}
+
+.testimonial-name {
+  margin-top: 10px;
+  color: #f2b705;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1200px) {
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .testimonial {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .testimonial-img {
+    width: 70px;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+  }
+
+  .testimonial-name {
+    font-size: 14px;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  background-color: #260101;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+p {
+  color: #f2b705;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+p2 {
+  color: green;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.destaque {
+  font-weight: bold;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  display: block;
+  position: center center center;
+  margin: 10px auto;
+}
+
+teste {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 80px;
+  position: 10px 10px;
+}
+
+.animacao {
+  animation: girar 1s ease-in-out backwards;
+}
+
+.animacao1 {
+  animation: girar 10s backwards;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.esconde {
+  display: none;
+}
+
+.balanco {
+  animation: balancar ease-in-out 10 alternate;
+}
+
+@keyframes balancar {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  border: 0px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li.finalizado {
+  background-color: #960707;
+}
+
+li:hover {
+  background-color: #960707;
+}
+
+.giratoria {
+  transition: transform 0.5s ease;
+}
+
+.giratoria:hover {
+  transform: rotate(360deg);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  width: 100%;
+  background-color: #260101;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  padding: 10;
+  margin: 0;
+  list-style: upper-alpha;
+}
+
+nav ul li {
+  display: inline-table;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: #a87f0e;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #813b02;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+.logo img {
+  text-align: center; /* Ajusta o logo*/
+  position: relative;
+  top: 0px;
+  left: 70px;
+}
+
+.logo_page2 img {
+  text-align: center; /* Ajusta o logo*/
+  position: relative;
+}
+
+.slogan {
+  text-align: center;
+  width: 100%;
+  background-color: #970404;
+  margin-top: 10px; /* Adiciona espaçamento superior */
+}
+
+.slogan img {
+  width: auto;
+  height: auto;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.rodape {
+  background-color: #260101;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 40px; /* Define a altura do rodapé */
+}
+
+/*Gisele alteração*/
+.rodape p {
+  text-align: center;
+  position: relative;
+  top: 9px;
+}
+
+/*icones somem ao minimizar tela*/
+@media only screen and (max-width: 600px) {
+  .img {
+    display: none;
+  }
+}
+
+.menu-item {
+  position: relative; /* Manter relativo para posicionamento absoluto interno */
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #430b0b; /* Vermelho escuro */
+  overflow: hidden; /* Evita que o preço ultrapasse o contêiner */
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px; /* Defina a altura desejada */
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+.menu-item h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #a87f0e;
+}
+
+.menu-item p {
+  margin-top: 10px;
+  color: #a87f0e; /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+  line-height: 1.5; /* Altura da linha */
+}
+
+.menu-item .price {
+  position: absolute;
+  bottom: 10px; /* Posiciona o preço na parte inferior */
+  left: 0;
+  width: 100%;
+  font-weight: bold;
+  color: #a87f0e; /* Cor do texto do preço */
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #260101; /* Cor de fundo da seção principal */
+  justify-content: center;
+  padding: 20px;
+}
+
+.adicionar-carrinho {
+  position: absolute;
+  top: 10px; /* Ajuste a posição vertical conforme necessário */
+  right: 10px; /* Ajuste a posição horizontal conforme necessário */
+  width: 40px;
+  height: 40px;
+  color: inherit;
+  text-decoration: none; /* Remove o sublinhado */
+  display: block; /* Faz o link ocupar todo o espaço do botão */
+  background-color: #f2b705; /* Cor de fundo para o ícone */
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  line-height: 40px
+}
+
+.menu-item p {
+  color: #a87f0e; /* Define a cor do texto da descrição */
+  font-size: 16px; /* Ajuste opcional: tamanho da fonte */
+  line-height: 1.5; /* Ajuste opcional: altura da linha */
+}
